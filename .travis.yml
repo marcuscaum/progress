@@ -11,9 +11,11 @@ deploy:
     script: now --public --token $NOW_TOKEN
     skip_cleanup: true
     on:
+      condition: $TRAVIS_BRANCH != master
       master: false
   - provider: script
     script: now --public --token $NOW_TOKEN && now alias --token $NOW_TOKEN
     skip_cleanup: true
     on:
+      branch: master
       master: true
