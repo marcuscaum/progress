@@ -1,18 +1,13 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 
-import logo from './logo.svg';
-import './App.css';
+import Home from 'pages/Home';
+import theme from './theme';
 
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h1 className="App-title">Test travis</h1>
-    </header>
-    <p className="App-intro">
-      To get started, edit <code>src/App.js</code> and save to reload.
-    </p>
-  </div>
+  <ThemeProvider theme={theme}>
+    <Home />
+  </ThemeProvider>
 );
 
 export default App;
