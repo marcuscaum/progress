@@ -1,8 +1,8 @@
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import React from "react";
+import { ThemeProvider } from "styled-components";
 
-import Home from 'pages/Home';
-import theme from './theme';
+import Home from "pages/Home";
+import theme from "./theme";
 
 const App = () => (
   <ThemeProvider theme={theme}>
